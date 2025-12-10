@@ -17,7 +17,7 @@ Sistem ini telah dilengkapi dengan **proteksi Race Condition** menggunakan datab
 * **Backend:** Node.js, Express.js
 * **Database:** MySQL (Library: `mysql2`)
 * **Frontend:** EJS (Templating Engine)
-* **Styling:** Tailwind CSS (via CDN)
+* **Styling:** Tailwind CSS versi 3
 * **Environment:** Dotenv
 
 ## Prasyarat (Prerequisites)
@@ -74,8 +74,14 @@ INSERT INTO stocks (product_id, quantity) VALUES
 Buka terminal di folder project, lalu jalankan perintah berikut:
 
 ```bash
-# Install semua library yang dibutuhkan
 npm install
+```
+atau kalo ingin mengistalnya satu persatu seperti ini
+
+```bash
+npm install express mysql2 ejs dotenv body-parser
+npm install -D tailwindcss@3
+npx tailwindcss init
 ```
 
 ### 3\. Konfigurasi Environment
