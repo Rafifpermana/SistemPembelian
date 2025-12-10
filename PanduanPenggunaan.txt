@@ -1,0 +1,36 @@
+============================================================
+            PANDUAN PENGGUNAAN (USER GUIDE)
+============================================================
+A. Dashboard Utama
+    - Halaman utama menampilkan tiga bagian penting:
+    - Form Transaksi Baru (Kiri Atas): Tempat input penjualan.
+    - Inventori Stok (Kiri Bawah): Daftar sisa barang.
+    - Warna Hijau: Stok aman (> 5).
+    - Warna Merah: Stok menipis (< 5).
+    - Riwayat Transaksi (Kanan): Daftar log penjualan.
+
+B. Melakukan Transaksi (Input Pembelian)
+    - Pada bagian "Transaksi Baru", klik dropdown Pilih Produk.
+    - Pilih barang yang diinginkan. (Produk dengan stok 0 tidak bisa dipilih).
+    - Masukkan Jumlah pada kolom input.
+    - Fitur Pintar: Jika Anda mengetik angka melebihi stok, kotak input akan berwarna merah dan muncul peringatan.
+    - Klik tombol "Simpan Transaksi".
+    - Stok akan berkurang otomatis dan data masuk ke tabel riwayat.
+
+C. Validasi Stok (Tes Error)
+    - Sistem memiliki pengaman ganda (Double Protection). Coba lakukan ini untuk mengetes:
+    - Lihat stok "Air Mineral" (misal: 50).
+    - Masukkan jumlah beli: 60.
+    - Secara tampilan, tombol mungkin tidak bisa ditekan.
+    - Jika dipaksa (misal matikan Javascript), sistem backend akan menolak dan memunculkan Popup Alert: "Permintaan Gagal! Stok tidak cukup..."
+
+D. Membatalkan Transaksi (Cancel)
+    - Jika terjadi kesalahan input:
+    - Lihat tabel Riwayat Transaksi di sebelah kanan.
+    - Cari transaksi yang ingin dibatalkan.
+    - Klik tombol tulisan "Batalkan" yang berwarna merah muda.
+    - Konfirmasi pesan Are you sure? dengan klik OK.
+    - Hasil:
+        Status transaksi berubah menjadi "Dibatalkan" (Merah).
+        Stok barang akan bertambah kembali secara otomatis ke inventori.
+============================================================
