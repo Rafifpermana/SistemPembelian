@@ -121,7 +121,7 @@ admin-toko/
 │   └── index.js          # Routing URL
 ├── views/
 │   └── index.ejs         # Tampilan (HTML + EJS + Tailwind)
-├── .env                  # Variabel Rahasia
+├── .env                  
 ├── server.js             # Entry Point Aplikasi
 └── package.json
 ```
